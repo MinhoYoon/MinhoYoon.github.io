@@ -22,12 +22,21 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
-    
-    <script src="https://www.google.com/maps/place/%EA%B2%BD%EA%B8%B0%EB%8F%84+%EB%B6%80%EC%B2%9C%EC%8B%9C+%EC%86%8C%EC%82%AC%EA%B5%AC+%EA%B4%B4%EC%95%88%EB%8F%99+155-8/@37.4761311,126.8074262,109m/data=!3m1!1e3!4m5!3m4!1s0x357b62e6b9972d57:0x42b1ca2cf6629f7d!8m2!3d37.4763392!4d126.8078037?hl=ko"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+ <script>
+  function initialize() {
+   var myLatlng = new google.maps.LatLng(37.4765853, 126.8076716);
+   var mapOptions = {
+        zoom: 17,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+   }
+   var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+  }
+ </script>
   </head>
 
-  <body id="page-top">
+  <body id="page-top" onload="initialize()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -43,7 +52,7 @@
               <a class="nav-link js-scroll-trigger" href="#services">코딩교육이란?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">교육시스템</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">왜 명신인가?</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">학원 연혁</a>
@@ -76,7 +85,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">코딩교육이란?</h2>
-            <h3 class="section-subheading text-muted">컴퓨터 코딩을 배움으로써 창의력과 문제해결력을 기르는 교육과정</h3>
+            <h3 class="section-subheading text-muted">C언어를 비롯한 프로그래밍 언어를 통해 알고리즘을 구성하는 법을 배우는 것</h3>
           </div>
         </div>
         <div class="row text-center">
@@ -85,24 +94,24 @@
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">기초부터 탄탄히</h4>
-            <p class="text-muted">명신코딩학원은 15년간 축적해온 노하우와 자료들을 통해 코딩을 하기 위한 기초를 탄탄히 교육합니다.</p>
+            <h4 class="service-heading">코딩 교육이 주목받는 이유</h4>
+            <p class="text-muted">문제를 해결하기위한 논리적 사고과정 그 자체를 스스로 생각할 수 있도록 하기 때문입니다.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading">창의력과 문제 해결력 증진</h4>
-            <p class="text-muted">문제 해결을 위한 코딩은 답이 한가지로 정해져 있지 않으며 높은 창의력과 문제 해결력을 요구합니다. 그렇기 때문에 스스로 해결하고 창의력을 키울 수 있도록 주입식이 아닌 문제에 대한 다양한 시각을 제공하며, 스스로 문제에 대해 고민하는 시간을 가지게 하는 교육하는 시스템을 갖추고 있습니다.</p>
+            <h4 class="service-heading">코딩 교육의 장점</h4>
+            <p class="text-muted">주어진 데이터를 효과적으로 분석할 수 있는 능력을 기를 수 있으며 다양한 관점에서 문제를 해결할 수 있도록 도와주는 것도 코딩교육의 큰 장점입니다.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
             </span>
-            <h4 class="service-heading"></h4>
-            <p class="text-muted"></p>
+            <h4 class="service-heading">전세계적 교육의 흐름</h4>
+            <p class="text-muted">영국, 미국,일본등의 국가에서는 이미 정규교과과정에 코딩교육을 포함 시켰고 우리나라도 2015학년도 중학교 입학생부터는 코딩교육(SW교육)이 의무화됩니다.</p>
           </div>
         </div>
       </div>
@@ -113,8 +122,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">교육 시스템</h2>
-            <h3 class="section-subheading text-muted">명신코딩학원은 15년간의 노하우와 코딩 자동 채점 시스템 도입을 통한 체계적인 교육시스템을 갖추고 있습니다. 아래 사진을 클릭하여 하나하나 확인하실 수 있습니다.</h3>
+            <h2 class="section-heading text-uppercase">왜 명신인가?</h2>
+            <h3 class="section-subheading text-muted">명신코딩학원은 15년간의 노하우와 코딩 자동 채점 시스템 도입을 통한 체계적인 교육시스템을 갖추고 있습니다. 아래 사진을 눌러 더 자세한 정보를 보실 수 있습니다.</h3>
           </div>
         </div>
         <div class="row">
@@ -129,7 +138,7 @@
             </a>
             <div class="portfolio-caption">
               <h4>기초 코딩 교육</h4>
-              <p class="text-muted">C언어를 통한 기초 코딩 교육</p>
+              <p class="text-muted">스크래치, 파이썬, C언어등을 통한 기초 코딩 교육</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -142,8 +151,8 @@
               <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>자동 채점 시스템</h4>
-              <p class="text-muted">학생들이 작성한 소스코드를 자동으로 채점가능한 시스템</p>
+              <h4>코딩수학 과정</h4>
+              <p class="text-muted">이산수학 및 창의사고력 수학을 배우는 과정</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -156,8 +165,8 @@
               <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>알고리즘 교육</h4>
-              <p class="text-muted">배운 내용을 활용한 알고리즘 교육</p>
+              <h4>정보올림피아드 과정</h4>
+           <p class="text-muted">과학기술정보통신부와 한국정보화진흥회, 교육청에서 주관하는 유일한 청소년 대회인 정보올림피아드를 준비하는 과정입니다.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -170,8 +179,8 @@
               <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>이산수학 교육</h4>
-              <p class="text-muted">창의력 증진을 돕는 이산수학 학습</p>
+              <h4>자동 채점 서버 시스템</h4>
+              <p class="text-muted">자동 채점 사이트를 통해 학생들이 코딩한 소스코드를 서버를 통해 정보올림피아드와 동일한 방식으로 자동 채점하여 결과를 알려주는 시스템을 갖추고 있습니다.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -184,8 +193,8 @@
               <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>정보올림피아드 준비</h4>
-              <p class="text-muted">초,중,고등학생 대상으로 매년 치뤄지는 전국적인 규모의 대회인 정보올림피아드 준비</p>
+              <h4>학원에서 배출한 인재들</h4>
+              <p class="text-muted">눌러서 자세히 확인하실 수 있습니다.</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -199,7 +208,7 @@
             </a>
             <div class="portfolio-caption">
               <h4>그 외 교육 내용</h4>
-              <p class="text-muted">정보 관련 기능사 자격증, OA 등을 교육</p>
+              <p class="text-muted">프로그래밍 외에도 정보 관련 기능사 자격증, OA 등을 교육합니다.</p>
             </div>
           </div>
         </div>
@@ -212,7 +221,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">학원 연혁</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">학원 연혁입니다.</h3>
           </div>
         </div>
         <div class="row">
@@ -388,9 +397,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12 color=white">
-            Phone Number : 010-9868-5664
-            <div id="map_view" style="width: 500px; height: 300px;"></div>
+          <div class="col-lg-12">
+            <p class="large text-muted">연락처 : 010-9868-5664</p>
+           <div id="map_canvas" style="width:500px; height:300px;"></div>
           </div>
         </div>
       </div>
